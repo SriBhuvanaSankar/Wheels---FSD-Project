@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4af00ea1.css",
+    "main.js": "/static/js/main.60d4b751.js",
+    "static/js/453.56fc727d.chunk.js": "/static/js/453.56fc727d.chunk.js",
+    "static/media/slider3.jpg": "/static/media/slider3.0f6434cb904b0f79e810.jpg",
+    "static/media/slider1.jpg": "/static/media/slider1.43e834a9095a58c87ac0.jpg",
+    "static/media/EV1.jpg": "/static/media/EV1.4be90bb48af2b153c137.jpg",
+    "static/media/About1.jpg": "/static/media/About1.0bea87d8b0738e45d6ac.jpg",
+    "static/media/skoda.png": "/static/media/skoda.95ea2f871cdce177ca52.png",
+    "static/media/nissan.png": "/static/media/nissan.689355e1d3a43e181bcc.png",
+    "static/media/slider2.jpg": "/static/media/slider2.f764f94949c7b9c99241.jpg",
+    "static/media/ford.png": "/static/media/ford.c1e71d754d6ef63ae612.png",
+    "static/media/fiat.png": "/static/media/fiat.750590b974c6759116ca.png",
+    "static/media/hyundai.png": "/static/media/hyundai.dae2bdb1ccec43bfece4.png",
+    "static/media/Toyota.png": "/static/media/Toyota.e28290c9607d02070155.png",
+    "static/media/honda.png": "/static/media/honda.02c6d9239ed0f48d70de.png",
+    "static/media/audi.png": "/static/media/audi.5d860cc7f9044180ef22.png",
+    "static/media/petrl.jpg": "/static/media/petrl.654a98c64a78587512a3.jpg",
+    "static/media/renault.png": "/static/media/renault.dea2f093e608720bf819.png",
+    "static/media/bmw.png": "/static/media/bmw.eab149d25c71c6642bad.png",
+    "static/media/citroen.png": "/static/media/citroen.b5e89334b255dc00b578.png",
+    "static/media/Cng.jpg": "/static/media/Cng.dae5ff8ee8286038843a.jpg",
+    "static/media/disel.jpg": "/static/media/disel.ad4683bda3d74c576721.jpg",
+    "static/media/tata.png": "/static/media/tata.abeeb15b8995fe532029.png",
+    "index.html": "/index.html",
+    "main.4af00ea1.css.map": "/static/css/main.4af00ea1.css.map",
+    "main.60d4b751.js.map": "/static/js/main.60d4b751.js.map",
+    "453.56fc727d.chunk.js.map": "/static/js/453.56fc727d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4af00ea1.css",
+    "static/js/main.60d4b751.js"
+  ]
+}
