@@ -1,0 +1,157 @@
+.car-detail-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.car-info {
+    margin-bottom: 30px;
+}
+
+.car-info p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    color: #444;
+}
+
+strong {
+    color: #000;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+/* Status Meter */
+.status-meter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 50px;
+    margin-top: 20px;
+}
+
+/* The static background bar */
+.status-meter::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    right: 50px;
+    height: 4px;
+    background-color: #ddd;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+/* The dynamic progress bar overlay */
+.status-meter::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    height: 4px;
+    background-color: #28a745;
+    transform: translateY(-50%);
+    width: var(--progress-width, 0%);
+    transition: width 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.status-step {
+    text-align: center;
+    position: relative;
+    z-index: 2; /* Ensure steps are on top of the bar */
+}
+
+.status-step span {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #999;
+}
+
+.status-step.active span {
+    font-weight: bold;
+    color: #333;
+}
+
+.status-step::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-color: #ddd;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    display: block;
+    margin: 0 auto 5px; /* Center the dot and add margin */
+}
+
+.status-step.active::after {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .car-detail-container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .car-info p {
+        font-size: 1em;
+    }
+
+    .status-meter {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 0;
+    }
+
+    /* Vertical line for mobile */
+    .status-meter::before, .status-meter::after {
+        top: 20px;
+        left: 31px;
+        bottom: 20px;
+        width: 4px;
+        height: auto;
+        right: auto;
+    }
+    
+    .status-meter::after {
+        width: 4px; /* Maintain vertical width */
+        height: var(--progress-width, 0%);
+    }
+
+    .status-step {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        text-align: left;
+    }
+    
+    .status-step span {
+        margin-top: 0;
+        margin-left: 15px;
+    }
+
+    .status-step::after {
+        margin: 0;
+    }
+}

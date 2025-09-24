@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+  /* Colors */
+  --primary-color: #02006b;
+  --secondary-color: #5767aa;
+  --background-color: #f4f4f9;
+  --text-color-dark: #333;
+  --text-color-light: #d8d8d8;
+  --section-bg: #5b5b5b;
+  --card-bg: #f9f9fc;
+  --border-color: #e0e0e0;
+}
+
+/* Global Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color-dark);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* About Section Styles */
+.about-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: var(--section-bg);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
+  color: var(--text-color-light);
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-header h1 {
+  font-size: 3rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.about-header p {
+  font-size: 1.1rem;
+  color: #bdbbbb;
+}
+
+.about-section {
+  margin-bottom: 50px;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  border-left: 5px solid var(--secondary-color);
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-color-light);
+}
+
+/* Offerings List Styles */
+.offerings-list {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.offerings-list li {
+  background-color: var(--card-bg);
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: var(--text-color-dark);
+}
+
+.offerings-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.offerings-list li h3 {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.offerings-list li p {
+  font-size: 0.95rem;
+  color: var(--text-color-dark);
+  line-height: 1.6;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .offerings-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .offerings-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Franklin+Gothic+Medium&display=swap');
+
+:root {
+  /* Colors */
+  --primary-color: #02006b;
+  --secondary-color: #5767aa;
+  --background-color: #f4f4f9;
+  --text-color-dark: #333;
+  --text-color-light: #fff;
+  --step-bg-color: #000;
+
+  /* Fonts */
+  --font-poppins: 'Poppins', sans-serif;
+  --font-gothic: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Global Body & Container Styles */
+body {
+  font-family: var(--font-poppins);
+  color: var(--text-color-dark);
+  line-height: 1.6;
+  background-color: var(--background-color);
+}
+
+.how-it-works {
+  text-align: center;
+  color: var(--text-color-light);
+  background-color: var(--primary-color);
+}
+
+.background-image {
+  background: url('../images/About1.jpg') no-repeat center center/cover;
+  height: 400px;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 1.1rem;
+}
+
+/* Steps Section */
+.steps {
+  display: flex;
+  flex-wrap: wrap; /* Allows steps to wrap on smaller screens */
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 20px; /* Use gap for spacing between steps */
+}
+
+.step {
+  background-color: var(--step-bg-color);
+  padding: 30px;
+  border-radius: 10px;
+  color: var(--text-color-light);
+  flex: 1;
+  min-width: 200px; /* Ensures steps don't get too small */
+  max-width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-10px) scale(1.05); /* Added a slight lift for a better effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.step h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.step h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 1em;
+}
+
+/* Image Row Section */
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  background-color: var(--primary-color);
+  gap: 20px; /* Use gap for spacing between images */
+}
+
+.hover-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px; /* Added rounded corners for a softer look */
+}
+
+.hover-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Titles */
+.title {
+  text-align: center;
+  color: var(--text-color-light);
+  background-color: var(--primary-color);
+  font-size: 40px;
+  font-family: var(--font-gothic);
+  padding: 20px 0; /* Added padding for space */
+}
+
+.title1 {
+  text-align: center;
+  color: var(--text-color-light);
+  background-color: var(--step-bg-color);
+  font-size: 40px;
+  font-family: var(--font-gothic);
+  padding: 20px 0; /* Added padding for space */
+}
